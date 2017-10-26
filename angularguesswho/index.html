@@ -10,7 +10,17 @@
 </head>
 <body ng-app="myApp">
     <input type="text" ng-model="intro">
-    <p>{{intro}}</p>
-    
+        <p>{{intro}}</p>
+    <div ng-controller="GuessWhoController as guess">
+        <p>{{guess.message}}</p>
+        <ul>
+        
+            <li ng-repeat="person in guess.people">
+            
+                <img ng-show="person.show" ng-src="https://github.com/{{person.github}}.png?size=200"> 
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
