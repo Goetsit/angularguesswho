@@ -11,8 +11,6 @@ myApp.controller('GuessWhoController', function () {
 
 
     guess.anotherTest= function () {
-
-        console.log('completely lost');
         console.log(guess.guess1);
         console.log(guess.guess2);
         people.push({name: guess.guess1, github: guess.guess2, show: true});
