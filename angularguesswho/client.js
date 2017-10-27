@@ -1,18 +1,31 @@
-var myApp = angular.module('myApp',[]);
+var myApp = angular.module('myApp', []);
 
-myApp.controller('GuessWhoController', function(){
+myApp.controller('GuessWhoController', function () {
 
     var guess = this;
 
 
-    guess.test = function(person) {
-        console.log(person);
-    }
-    
-    var people = [{name: 'Laura', github: 'goetsit', show:true}
-                ,{name: 'Chad', github: 'ChadRoesler',show:true}];
 
-    guess.message = 'Who is pictured?';
+    var people = [{ name: 'Laura', github: 'goetsit', show: true }
+        , { name: 'Chad', github: 'ChadRoesler', show: true }];
+
+
+    function anotherTest() {
+
+        var idk = angular.element('#idkOne').value();
+        console.log(' test because i am completely lost');
+        console.log(idk);
+    }
+
+
+
+    guess.test = function (person) {
+        console.log(person);
+        guess.message = person;
+
+    }
+
+
 
     guess.people = people;
 });
