@@ -10,9 +10,8 @@
 </head>
 <body ng-app="myApp">
     <div ng-controller="GuessWhoController as guess">
-            name<input type="text" ng-model="guess1" id="idkOne">
-            <button ng-click="guess.anotherTest()">submit</button>
-            github<input type="text" ng-model="guess2" id = "idkTwo">
+            name<input type="text" ng-model="guess.guess1" id="idkOne">
+            github<input type="text" ng-model="guess.guess2" id = "idkTwo">
             <button ng-click="guess.anotherTest()">submit</button>
         <p>Guess who? I guess.</p>
         <p>{{guess.message}}</p>
